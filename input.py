@@ -42,10 +42,7 @@ def view(data):
 
 
 def run():
-    if inp_operans(): 
-        result = calc(oper)
-    else:
-        result = False
+    result = calc(oper) if inp_operans() else False
     log(result)
     view(result)
 

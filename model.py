@@ -10,7 +10,7 @@ model_name_div = 'div'
 model_name_mlt = 'mult'
 model_name_int = 'init'
 
-model_ioc = dict()
+model_ioc = {}
 
 def init(in_a, in_b, type_num):
     if type_num not in (model_name_rac, model_name_kmp):

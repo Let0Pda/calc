@@ -11,10 +11,10 @@ def parse(data):
 
     data = data.replace(" ", "")
     for n, x in enumerate(data):
-        if x == "+" or x == "-":
+        if x in ["+", "-"]:
             data_real = data[:n]
         elif x == "i":
-            data_complex = data[len(data_real)+1:len(data)-1]
+            data_complex = data[len(data_real)+1:-1]
     return float(data_real), float(data_complex)
 
 def sum():
